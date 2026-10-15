@@ -1,0 +1,1 @@
+const search=document.getElementById('search');search.addEventListener('input',()=>{let n=0;document.querySelectorAll('.service').forEach(c=>{let ok=c.dataset.name.includes(search.value.trim());c.style.display=ok?'block':'none';if(ok)n++});document.getElementById('noResults').style.display=n?'none':'block'});

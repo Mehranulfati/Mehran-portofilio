@@ -1,0 +1,935 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مهران الفتی | Mehran Ulfati — Portfolio</title>
+    <meta
+      name="description"
+      content="پورتفولیوی مهران الفتی — توسعه‌دهنده وب و طراح سایت"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./images/profile-portfolio.png" type="image/x-icon">
+  </head>
+  <body>
+    <!-- Grain texture -->
+    <div class="grain"></div>
+
+    <!-- ============================================================
+     HEADER
+     ============================================================ -->
+    <header class="site-header">
+      <div class="wrap header-wrap">
+        <a
+          href="#"
+          class="brand"
+          onclick="
+            switchTab('home');
+            return false;
+          "
+        >
+          <span class="brand-mark"><img src="./images/profile-portfolio.png" alt=""></span>
+          <div class="brand-text">
+            <span class="brand-fa">مهران الفتی</span>
+            <span class="brand-en">MEHRAN ULFATI</span>
+          </div>
+        </a>
+
+        <nav class="main-nav" id="mainNav">
+          <a
+            href="#"
+            class="nav-item active"
+            data-tab="home"
+            onclick="
+              switchTab('home');
+              return false;
+            "
+            >خانه</a
+          >
+          <a
+            href="#"
+            class="nav-item"
+            data-tab="about"
+            onclick="
+              switchTab('about');
+              return false;
+            "
+            >درباره من</a
+          >
+          <a
+            href="#"
+            class="nav-item"
+            data-tab="skills"
+            onclick="
+              switchTab('skills');
+              return false;
+            "
+            >مهارت‌ها</a
+          >
+          <a
+            href="#"
+            class="nav-item"
+            data-tab="projects"
+            onclick="
+              switchTab('projects');
+              return false;
+            "
+            >پروژه‌ها</a
+          >
+          <a
+            href="#"
+            class="nav-item"
+            data-tab="contact"
+            onclick="
+              switchTab('contact');
+              return false;
+            "
+            >تماس</a
+          >
+        </nav>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ============================================================
+     TAB: HOME
+     ============================================================ -->
+    <main id="tab-home" class="tab active">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="wrap hero-wrap">
+          <div class="hero-left">
+            <div class="hero-tag">
+              <span class="tag-dot"></span>
+              آماده همکاری
+            </div>
+
+            <h1 class="hero-h1">
+              سلام، من<br />
+              <span class="hero-name">مهران الفتی</span><br />
+              هستم
+            </h1>
+
+            <p class="hero-role">
+              <span id="roleTyping"></span><span class="role-cursor">|</span>
+            </p>
+
+            <p class="hero-bio">
+              توسعه‌دهنده وب و طراح سایت. علاقه‌مند به ساخت پروژه‌های کاربردی،
+              یادگیری فناوری‌های جدید و تبدیل ایده‌ها به محصولات دیجیتال واقعی.
+            </p>
+
+            <div class="hero-cta">
+              <button class="btn-main" onclick="switchTab('projects')">
+                مشاهده پروژه‌ها
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg>
+              </button>
+              <button class="btn-soft" onclick="switchTab('contact')">
+                تماس با من
+              </button>
+            </div>
+
+            <div class="hero-social">
+              <a
+                href="mailto:mehran.ict@gmail.com"
+                class="social-link"
+                title="ایمیل"
+              >
+                <span>✉</span>
+              </a>
+              <a href="tel:0793220466" class="social-link" title="تماس">
+                <span>☎</span>
+              </a>
+              <a
+                href="https://wa.me/93793220466"
+                target="_blank"
+                class="social-link"
+                title="واتساپ"
+              >
+                <span>💬</span>
+              </a>
+              <a
+                href="https://mehranulfati.github.io/project/"
+                target="_blank"
+                class="social-link"
+                title="وب‌سایت"
+              >
+                <span>🌐</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-right">
+            <div class="photo-stage">
+              <div class="stage-grid"></div>
+              <div class="stage-frame">
+                <div class="corner corner-tl"></div>
+                <div class="corner corner-tr"></div>
+                <div class="corner corner-bl"></div>
+                <div class="corner corner-br"></div>
+                <img
+                  src="images/profile-portfolio.png"
+                  alt="مهران الفتی"
+                  onerror="
+                    this.parentElement.innerHTML =
+                      '<div class=\'photo-fallback\'>MU</div>'
+                  "
+                />
+              </div>
+              <span class="stage-badge badge-1">HTML</span>
+              <span class="stage-badge badge-2">CSS</span>
+              <span class="stage-badge badge-3">JavaScript</span>
+              <span class="stage-badge badge-4">Web Design</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-marquee">
+          <div class="marquee-track">
+            <span>HTML</span><span>•</span> <span>CSS</span><span>•</span>
+            <span>JavaScript</span><span>•</span> <span>Web Design</span
+            ><span>•</span> <span>Programming</span><span>•</span>
+            <span>Computer Skills</span><span>•</span> <span>HTML</span
+            ><span>•</span> <span>CSS</span><span>•</span>
+            <span>JavaScript</span><span>•</span> <span>Web Design</span
+            ><span>•</span> <span>Programming</span><span>•</span>
+            <span>Computer Skills</span><span>•</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATS -->
+      <section class="block">
+        <div class="wrap">
+          <div class="stats-row">
+            <div class="stat-cell reveal">
+              <div class="stat-num" data-count="6">0</div>
+              <div class="stat-label">پروژه ساخته‌شده</div>
+            </div>
+            <div class="stat-cell reveal">
+              <div class="stat-num" data-count="6">0</div>
+              <div class="stat-label">مهارت اصلی</div>
+            </div>
+            <div class="stat-cell reveal">
+              <div class="stat-num" data-count="3" data-suffix="+">0</div>
+              <div class="stat-label">سال یادگیری</div>
+            </div>
+            <div class="stat-cell reveal">
+              <div class="stat-num" data-count="100" data-suffix="%">0</div>
+              <div class="stat-label">اشتیاق به یادگیری</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- INTRO -->
+      <section class="block">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="sec-label">معرفی</span>
+            <h2 class="sec-title">درباره من</h2>
+          </div>
+
+          <div class="intro-layout">
+            <div class="intro-big reveal">
+              <p class="intro-lead">
+                من <span class="accent">مهران الفتی</span> هستم، توسعه‌دهنده وب
+                و علاقه‌مند به ساخت پروژه‌های کاربردی.
+              </p>
+              <p>
+                مسیر من از یک کنجکاوی ساده درباره اینکه «وب‌سایت‌ها چطور ساخته
+                می‌شوند» شروع شد و امروز به ساختن پروژه‌های واقعی رسیده است. هر
+                روز چیز جدید یاد می‌گیرم و سعی می‌کنم دانش خود را در پروژه‌های
+                واقعی به کار ببرم.
+              </p>
+              <p>
+                هدف من تبدیل شدن به یک توسعه‌دهنده حرفه‌ای وب و ساختن محصولات
+                دیجیتالی است که برای مردم ارزش ایجاد کند.
+              </p>
+              <button class="btn-soft" onclick="switchTab('about')">
+                بیشتر بخوانید
+              </button>
+            </div>
+
+            <div class="intro-side">
+              <div class="fact-card reveal">
+                <span class="fact-icon">📍</span>
+                <div>
+                  <b>موقعیت</b>
+                  <p>افغانستان</p>
+                </div>
+              </div>
+              <div class="fact-card reveal">
+                <span class="fact-icon">💼</span>
+                <div>
+                  <b>تخصص</b>
+                  <p>Front-End Development</p>
+                </div>
+              </div>
+              <div class="fact-card reveal">
+                <span class="fact-icon">🎯</span>
+                <div>
+                  <b>هدف</b>
+                  <p>توسعه‌دهنده حرفه‌ای وب</p>
+                </div>
+              </div>
+              <div class="fact-card reveal">
+                <span class="fact-icon">📞</span>
+                <div>
+                  <b>تماس</b>
+                  <p dir="ltr">0793220466</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS PREVIEW -->
+      <section class="block">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="sec-label">مهارت‌ها</span>
+            <h2 class="sec-title">تخصص من</h2>
+          </div>
+
+          <div class="skills-bars reveal">
+            <div class="skill-row">
+              <div class="skill-meta"><span>HTML</span><span>90%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-w="90"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-meta"><span>CSS</span><span>85%</span></div>
+              <div class="skill-track">
+                <div class="skill-fill" data-w="85"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span>JavaScript</span><span>75%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-w="75"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-meta">
+                <span>Web Design</span><span>80%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-w="80"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED PROJECTS -->
+      <section class="block">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="sec-label">نمونه کار</span>
+            <h2 class="sec-title">پروژه‌های منتخب</h2>
+          </div>
+
+          <div class="proj-grid">
+            <article class="proj-card reveal">
+              <div class="proj-cover cover-1">
+                <span class="proj-icon">🧮</span>
+                <span class="proj-num">01</span>
+              </div>
+              <div class="proj-body">
+                <h3>ماشین حساب</h3>
+                <p>ماشین حساب کاربردی با پشتیبانی از کیبورد و درصد</p>
+                <div class="proj-tags">
+                  <span>HTML</span><span>CSS</span><span>JS</span>
+                </div>
+                <a
+                  href="projects/calculator/index.html"
+                  target="_blank"
+                  class="proj-link"
+                >
+                  باز کردن پروژه <span>↗</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="proj-card reveal">
+              <div class="proj-cover cover-2">
+                <span class="proj-icon">🎓</span>
+                <span class="proj-num">02</span>
+              </div>
+              <div class="proj-body">
+                <h3>مدیریت معلومات مکتب</h3>
+                <p>سیستم ثبت، جستجو، حذف و مدیریت شاگردان</p>
+                <div class="proj-tags">
+                  <span>HTML</span><span>CSS</span><span>JS</span>
+                </div>
+                <a
+                  href="projects/school-management/index.html"
+                  target="_blank"
+                  class="proj-link"
+                >
+                  باز کردن پروژه <span>↗</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="proj-card reveal">
+              <div class="proj-cover cover-3">
+                <span class="proj-icon">📊</span>
+                <span class="proj-num">03</span>
+              </div>
+              <div class="proj-body">
+                <h3>داشبورد مدیریت کارها</h3>
+                <p>مدیریت تسک‌ها با فیلتر، آمار و ذخیره‌سازی محلی</p>
+                <div class="proj-tags">
+                  <span>HTML</span><span>CSS</span><span>JS</span>
+                </div>
+                <a
+                  href="projects/task-dashboard/index.html"
+                  target="_blank"
+                  class="proj-link"
+                >
+                  باز کردن پروژه <span>↗</span>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <div class="see-all">
+            <button class="btn-main" onclick="switchTab('projects')">
+              دیدن همه پروژه‌ها
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================================================
+     TAB: ABOUT
+     ============================================================ -->
+    <main id="tab-about" class="tab">
+      <section class="block">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="sec-label">درباره من</span>
+            <h1 class="page-title">با من آشنا شوید</h1>
+          </div>
+
+          <div class="about-layout">
+            <article class="about-main reveal">
+              <h2>مهران الفتی (Mehran Ulfati)</h2>
+              <p class="about-role">توسعه‌دهنده وب و طراح سایت</p>
+
+              <p>
+                من مهران الفتی هستم، عاشق دنیای برنامه‌نویسی و ساخت وب‌سایت‌های
+                مدرن. از زمانی که اولین خط HTML را نوشتم، فهمیدم که می‌خواهم
+                زندگی‌ام را با ساخت محصولات دیجیتالی بگذرانم.
+              </p>
+
+              <p>
+                امروز در حال یادگیری مستمر HTML، CSS، JavaScript و مفاهیم طراحی
+                رابط کاربری هستم. هر پروژه‌ای که می‌سازم، فرصتی است برای یادگیری
+                چیز جدید و بهتر کردن مهارت‌هایم.
+              </p>
+
+              <h3 class="about-h3">علاقه‌مندی‌های من</h3>
+              <div class="interest-tags">
+                <span>💻 برنامه‌نویسی</span>
+                <span>🌐 طراحی وب</span>
+                <span>🎨 رابط کاربری</span>
+                <span>📚 یادگیری</span>
+                <span>🚀 فناوری</span>
+                <span>🧩 حل مسئله</span>
+              </div>
+
+              <h3 class="about-h3">اهداف من</h3>
+              <ul class="goal-list">
+                <li>تسلط کامل بر JavaScript و فریمورک‌های مدرن</li>
+                <li>ساخت پروژه‌های فول‌استک با دیتابیس</li>
+                <li>یادگیری React و Next.js</li>
+                <li>طراحی UI/UX حرفه‌ای</li>
+                <li>کمک به جامعه از طریق پروژه‌های کاربردی</li>
+              </ul>
+            </article>
+
+            <aside class="about-aside">
+              <div class="info-block reveal">
+                <h4>معلومات تماس</h4>
+                <div class="info-line"><b>نام:</b> مهران الفتی</div>
+                <div class="info-line"><b>انگلیسی:</b> Mehran Ulfati</div>
+                <div class="info-line">
+                  <b>تلفن:</b> <span dir="ltr">0793220466</span>
+                </div>
+                <div class="info-line">
+                  <b>ایمیل:</b> <span dir="ltr">mehran.ict@gmail.com</span>
+                </div>
+                <div class="info-line">
+                  <b>وب‌سایت:</b>
+                  <a
+                    href="https://mehranulfati.github.io/project/"
+                    target="_blank"
+                    >mehranulfati.github.io</a
+                  >
+                </div>
+              </div>
+
+              <div class="info-block reveal">
+                <h4>سطح مهارت</h4>
+                <div class="mini-bars">
+                  <div class="mini-bar">
+                    <div class="mini-label">
+                      <span>HTML</span><span>90%</span>
+                    </div>
+                    <div class="mini-track">
+                      <div class="mini-fill" data-w="90"></div>
+                    </div>
+                  </div>
+                  <div class="mini-bar">
+                    <div class="mini-label">
+                      <span>CSS</span><span>85%</span>
+                    </div>
+                    <div class="mini-track">
+                      <div class="mini-fill" data-w="85"></div>
+                    </div>
+                  </div>
+                  <div class="mini-bar">
+                    <div class="mini-label">
+                      <span>JavaScript</span><span>75%</span>
+                    </div>
+                    <div class="mini-track">
+                      <div class="mini-fill" data-w="75"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================================================
+     TAB: SKILLS
+     ============================================================ -->
+    <main id="tab-skills" class="tab">
+      <section class="block">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="sec-label">مهارت‌ها</span>
+            <h1 class="page-title">تکنولوژی‌های من</h1>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-card reveal">
+              <div class="skill-icon">🧱</div>
+              <h3>HTML</h3>
+              <p>ساختار استاندارد و معنایی صفحات وب</p>
+              <div class="skill-track">
+                <div class="skill-fill" data-w="90"></div>
+              </div>
+              <span class="skill-tag">پیشرفته</span>
+            </div>
+
+            <div class="skill-card reveal">
+              <div class="skill-icon">🎨</div>
+              <h3>CSS</h3>
+              <p>طراحی رابط کاربری و انیمیشن‌های مدرن</p>
+              <div class="skill-track">
+                <div class="skill-fill" data-w="85"></div>
+              </div>
+              <span class="skill-tag">پیشرفته</span>
+            </div>
+
+            <div class="skill-card reveal">
+              <div class="skill-icon">⚡</div>
+              <h3>JavaScript</h3>
+              <p>برنامه‌نویسی تعاملی و منطق برنامه</p>
+              <div class="skill-track">
+                <div class="skill-fill" data-w="75"></div>
+              </div>
+              <span class="skill-tag">متوسط تا پیشرفته</span>
+            </div>
+
+            <div class="skill-card reveal">
+              <div class="skill-icon">🖥️</div>
+              <h3>Web Design</h3>
+              <p>طراحی چیدمان، رنگ‌بندی و تجربه کاربری</p>
+              <div class="skill-track">
+                <div class="skill-fill" data-w="80"></div>
+              </div>
+              <span class="skill-tag">پیشرفته</span>
+            </div>
+
+            <div class="skill-card reveal">
+              <div class="skill-icon">⚙️</div>
+              <h3>Programming</h3>
+              <p>حل مسئله، الگوریتم و تفکر منطقی</p>
+              <div class="skill-track">
+                <div class="skill-fill" data-w="78"></div>
+              </div>
+              <span class="skill-tag">پیشرفته</span>
+            </div>
+
+            <div class="skill-card reveal">
+              <div class="skill-icon">💡</div>
+              <h3>Computer Skills</h3>
+              <p>تسلط به نرم‌افزارها و ابزارهای کامپیوتری</p>
+              <div class="skill-track">
+                <div class="skill-fill" data-w="88"></div>
+              </div>
+              <span class="skill-tag">پیشرفته</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================================================
+     TAB: PROJECTS
+     ============================================================ -->
+    <main id="tab-projects" class="tab">
+      <section class="block">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="sec-label">نمونه کار</span>
+            <h1 class="page-title">پروژه‌های من</h1>
+            <p class="sec-lead">پروژه‌های واقعی و کاربردی که خودم ساخته‌ام</p>
+          </div>
+
+          <div class="proj-grid">
+            <article class="proj-card reveal">
+              <div class="proj-cover cover-4">
+                <span class="proj-icon">🤝</span>
+                <span class="proj-num">01</span>
+              </div>
+              <div class="proj-body">
+                <h3>همیار | HAMYAR</h3>
+                <p>سایت معرفی خدمات آموزشی و تکنولوژی با جستجوی خدمات</p>
+                <div class="proj-tags">
+                  <span>HTML</span><span>CSS</span><span>JS</span>
+                </div>
+                <a
+                  href="projects/hamyar/index.html"
+                  target="_blank"
+                  class="proj-link"
+                >
+                  باز کردن پروژه <span>↗</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="proj-card reveal">
+              <div class="proj-cover cover-2">
+                <span class="proj-icon">🎓</span>
+                <span class="proj-num">02</span>
+              </div>
+              <div class="proj-body">
+                <h3>مدیریت معلومات مکتب</h3>
+                <p>سیستم ثبت، جستجو، حذف و مدیریت شاگردان با LocalStorage</p>
+                <div class="proj-tags">
+                  <span>HTML</span><span>CSS</span><span>JS</span>
+                </div>
+                <a
+                  href="projects/school-management/index.html"
+                  target="_blank"
+                  class="proj-link"
+                >
+                  باز کردن پروژه <span>↗</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="proj-card reveal">
+              <div class="proj-cover cover-1">
+                <span class="proj-icon">🧮</span>
+                <span class="proj-num">03</span>
+              </div>
+              <div class="proj-body">
+                <h3>ماشین حساب</h3>
+                <p>ماشین حساب کاربردی با پشتیبانی کامل از کیبورد</p>
+                <div class="proj-tags">
+                  <span>HTML</span><span>CSS</span><span>JS</span>
+                </div>
+                <a
+                  href="projects/calculator/index.html"
+                  target="_blank"
+                  class="proj-link"
+                >
+                  باز کردن پروژه <span>↗</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="proj-card reveal">
+              <div class="proj-cover cover-5">
+                <span class="proj-icon">📚</span>
+                <span class="proj-num">04</span>
+              </div>
+              <div class="proj-body">
+                <h3>مرکز آموزشی</h3>
+                <p>سایت معرفی کورس‌ها با جستجو، فیلتر و ثبت‌نام</p>
+                <div class="proj-tags">
+                  <span>HTML</span><span>CSS</span><span>JS</span>
+                </div>
+                <a
+                  href="projects/education-center/index.html"
+                  target="_blank"
+                  class="proj-link"
+                >
+                  باز کردن پروژه <span>↗</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="proj-card reveal">
+              <div class="proj-cover cover-6">
+                <span class="proj-icon">📍</span>
+                <span class="proj-num">05</span>
+              </div>
+              <div class="proj-body">
+                <h3>جستجوی مکان‌ها</h3>
+                <p>برنامه جستجو و دسته‌بندی مکان‌ها با نمایش جزئیات</p>
+                <div class="proj-tags">
+                  <span>HTML</span><span>CSS</span><span>JS</span>
+                </div>
+                <a
+                  href="projects/location-finder/index.html"
+                  target="_blank"
+                  class="proj-link"
+                >
+                  باز کردن پروژه <span>↗</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="proj-card reveal">
+              <div class="proj-cover cover-3">
+                <span class="proj-icon">📊</span>
+                <span class="proj-num">06</span>
+              </div>
+              <div class="proj-body">
+                <h3>داشبورد مدیریت کارها</h3>
+                <p>مدیریت تسک‌ها با فیلتر، آمار و ذخیره‌سازی محلی</p>
+                <div class="proj-tags">
+                  <span>HTML</span><span>CSS</span><span>JS</span>
+                </div>
+                <a
+                  href="projects/task-dashboard/index.html"
+                  target="_blank"
+                  class="proj-link"
+                >
+                  باز کردن پروژه <span>↗</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================================================
+     TAB: CONTACT
+     ============================================================ -->
+    <main id="tab-contact" class="tab">
+      <section class="block">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="sec-label">تماس</span>
+            <h1 class="page-title">بیایید صحبت کنیم</h1>
+            <p class="sec-lead">
+              برای همکاری، پیشنهاد پروژه یا هر سوالی با من در تماس باشید
+            </p>
+          </div>
+
+          <div class="contact-layout">
+            <div class="contact-items">
+              <a class="contact-item reveal" href="tel:0793220466">
+                <div class="ci-icon">☎</div>
+                <div class="ci-body">
+                  <h4>تماس تلفنی</h4>
+                  <p dir="ltr">0793220466</p>
+                </div>
+                <span class="ci-arrow">←</span>
+              </a>
+
+              <a class="contact-item reveal" href="mailto:mehran.ict@gmail.com">
+                <div class="ci-icon">✉</div>
+                <div class="ci-body">
+                  <h4>ایمیل</h4>
+                  <p dir="ltr">mehran.ict@gmail.com</p>
+                </div>
+                <span class="ci-arrow">←</span>
+              </a>
+
+              <a
+                class="contact-item reveal"
+                href="https://wa.me/93793220466"
+                target="_blank"
+              >
+                <div class="ci-icon">💬</div>
+                <div class="ci-body">
+                  <h4>واتساپ</h4>
+                  <p>گفتگوی سریع</p>
+                </div>
+                <span class="ci-arrow">←</span>
+              </a>
+
+              <a
+                class="contact-item reveal"
+                href="https://mehranulfati.github.io/project/"
+                target="_blank"
+              >
+                <div class="ci-icon">🌐</div>
+                <div class="ci-body">
+                  <h4>وب‌سایت</h4>
+                  <p dir="ltr">mehranulfati.github.io</p>
+                </div>
+                <span class="ci-arrow">←</span>
+              </a>
+            </div>
+
+            <div class="contact-form-wrap reveal">
+              <form class="contact-form" id="contactForm">
+                <h3>پیام خود را بنویسید</h3>
+                <p class="form-note">
+                  پس از پر کردن، پیام از طریق ایمیل شما به من ارسال می‌شود.
+                </p>
+
+                <div class="field">
+                  <label>نام شما</label>
+                  <input
+                    type="text"
+                    id="cName"
+                    required
+                    placeholder="نام کامل شما"
+                  />
+                </div>
+
+                <div class="field">
+                  <label>ایمیل شما</label>
+                  <input
+                    type="email"
+                    id="cEmail"
+                    required
+                    placeholder="example@mail.com"
+                    dir="ltr"
+                  />
+                </div>
+
+                <div class="field">
+                  <label>پیام</label>
+                  <textarea
+                    id="cMsg"
+                    rows="5"
+                    required
+                    placeholder="متن پیام..."
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn-main btn-full">
+                  <span>📤</span> ارسال پیام
+                </button>
+
+                <p class="form-msg" id="formMsg"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================================================
+     FOOTER
+     ============================================================ -->
+    <footer class="site-footer">
+      <div class="wrap footer-wrap">
+        <div class="footer-brand">
+          <span class="brand-mark"><img src="./images/file_00000000e75c821183ec8c6363f09003.png" alt=""></span>
+          <div>
+            <div class="footer-name">مهران الفتی</div>
+            <div class="footer-en">MEHRAN ULFATI</div>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <a
+            href="#"
+            onclick="
+              switchTab('home');
+              return false;
+            "
+            >خانه</a
+          >
+          <a
+            href="#"
+            onclick="
+              switchTab('about');
+              return false;
+            "
+            >درباره</a
+          >
+          <a
+            href="#"
+            onclick="
+              switchTab('skills');
+              return false;
+            "
+            >مهارت‌ها</a
+          >
+          <a
+            href="#"
+            onclick="
+              switchTab('projects');
+              return false;
+            "
+            >پروژه‌ها</a
+          >
+          <a
+            href="#"
+            onclick="
+              switchTab('contact');
+              return false;
+            "
+            >تماس</a >
+        </div>
+
+        <div class="footer-contact">
+          <a href="tel:0793220466" dir="ltr">0793220466</a>
+          <a href="mailto:mehran.ict@gmail.com" dir="ltr"
+            >mehran.ict@gmail.com</a
+          >
+        </div>
+      </div>
+
+      <div class="footer-end">
+        <p>© <span id="year"></span> مهران الفتی — ساخته شده با ❤️ و کد</p>
+      </div>
+    </footer>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
